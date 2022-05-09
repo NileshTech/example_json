@@ -1,13 +1,25 @@
 {
-    "name":"Container",
-    "params": {
-        "color":"#Color(0xffff0000)",
-        "padding":"#const EdgeInsets.all(16.0)",
+    "type": "scaffold",
+    "args": {
+        "appbar": {
+            "args": {
+                "title": {
+                    "type": "text",
+                    "args": {
+                        "text": "Dynamic Widget"
+                    }
+                }
+            }
+        }
+    },
+    "body": {
+        "type": "container",
         "child": {
-            "name":"Text",
-            "params":{
-                "0": "Hello flutter builder!",
-                "style":"#TextStyle(color: Color(0xffffffff), fontWeight: FontWeight.bold )"
+            "type": "center",
+            "args": {
+                "height": 100.0,
+                "width": 200.0,
+                "text": "Dynamic Widget"
             }
         }
     }
